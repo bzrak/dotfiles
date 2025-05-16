@@ -1,0 +1,44 @@
+[general]
+import = ["~/.config/alacritty/themes/themes/cyber_punk_neon.toml"]
+live_config_reload = true  # default
+
+[window]
+opacity = 0.9
+padding.x = 0    # default
+padding.y = 0    # default
+decorations = "Buttonless"  # MacOS Only
+
+[scrolling]
+history = 100000  # Max value
+
+[font]
+normal = { family = "FiraCode Nerd Font Mono", style = "Regular"}
+# normal = { family = "JetBrainsMono Nerd Font", style = "Regular"}
+# normal = { family = "ShureTechMono Nerd Font", style = "Regular"}
+# normal = { family = "SpaceMono Nerd Font", style = "Regular"}
+# normal = { family = "Terminess Nerd Font", style = "Regular"}
+# normal = { family = "EnvyCodeR Nerd Font Mono", style = "Regular"}
+
+size = 20.0       # Font Size
+
+# Extra space between character; x for letter spacing and y for line spacing
+offset = {x = 0, y = 0}     # default values
+
+
+[colors.primary]
+# foreground = "#FFFFFF"
+background = "#000000"
+
+
+[colors]
+cursor = { text = "#2B303B", cursor = "#7C9DBC"}
+vi_mode_cursor = { text = "#2B303B", cursor = "#FE5F57"}
+selection = { text = "CellBackground", background = "#4C566A" }
+
+[selection]
+save_to_clipboard = true
+
+
+[cursor]
+unfocused_hollow = true     # default value
+
