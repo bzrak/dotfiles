@@ -104,25 +104,10 @@ source $ZSH/oh-my-zsh.sh
 if [[ "$(uname)" == "Darwin" ]]; then
     # MacOS specific settigns
     export PATH=/opt/homebrew/opt/curl/bin/:$PATH
+    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 elif [[ "$(uname)" == "Linux" ]]; then
     # Linux specific settings
 fi
 
 
-###################
-#  A L I A S E S  #
-###################
-alias python='python3'
-alias vi='nvim'
-alias vim='nvim'
-alias ls='eza'
-alias cat='bat'
-alias rclonecp='rclone copy --progress --disable-http2'
-
-
-
-###################
-#   C O N F I G   #
-###################
-# Prompt
 eval "$(starship init zsh)"

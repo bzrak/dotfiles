@@ -6,6 +6,9 @@
 #         without any warranty.
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
+set-option -g default-terminal "screen-254color"
+set-option -a terminal-features 'alacritty:RGB'
+set-option -a terminal-overrides 'alacritty:Tc'
 
 # -- bindings ------------------------------------------------------------------
 
@@ -389,7 +392,7 @@ tmux_conf_urlscan_options="--compact --dedupe"
 # this is the place to override or undo settings
 
 # increase history size
-#set -g history-limit 10000
+set -g history-limit 100000
 
 # start with mouse mode enabled
 set -g mouse on
@@ -412,6 +415,21 @@ set -g mouse on
 # move status line to top
 #set -g status-position top
 
+# Rename session and window
+bind r command-prompt -I "#{window_name}" "rename-window '%%'"
+bind R command-prompt -I "#{session_name}" "rename-session '%%'"
+
+# Select windows
+bind -r ] next-window
+bind -r [ previous-window
+
+unbind q
+unbind Q
+
+# Kill session and pane
+bind Q kill-pane
+bind q kill-window
+bind C-q kill-session
 
 # -- tpm -----------------------------------------------------------------------
 
