@@ -1,0 +1,64 @@
+# Fix nvim colors when in Tmux
+set-option -g default-terminal "screen-254color"
+set-option -a terminal-features 'alacritty:RGB'
+set-option -a terminal-overrides 'alacritty:Tc'
+
+unbind C-b
+set -g prefix C-a
+
+set -g base-index 1           # start windows numbering at 1
+setw -g pane-base-index 1     # make pane numbering consistent with windows
+
+setw -g automatic-rename on   # rename window to reflect current program
+set -g renumber-windows on    # renumber windows when a window is closed
+
+set -g set-titles on          # set terminal title
+
+set -g display-panes-time 800 # slightly longer pane indicators display time
+set -g display-time 1000      # slightly longer status messages display time
+
+set -g status-interval 10     # redraw status line every 10 seconds
+
+# increase history size
+set -g history-limit 100000
+
+# start with mouse mode enabled
+set -g mouse on
+
+
+
+# Unbind default keybinds
+unbind [    # paste-buffer
+unbind ]    
+unbind &    # kill-window
+unbind q
+unbind Q
+
+
+# Reload tmux configuration 
+bind C-r source-file ~/.config/tmux/tmux.conf \; display "Config reloaded"
+
+# Rename session and window
+bind r command-prompt -I "#{window_name}" "rename-window '%%'"
+bind R command-prompt -I "#{session_name}" "rename-session '%%'"
+
+# split panes
+bind - split-window -v
+bind | split-window -h
+
+# pane navigation
+bind h select-pane -L  # move left
+bind j select-pane -D  # move down
+bind k select-pane -U  # move up
+bind l select-pane -R  # move right
+bind > swap-pane -D       # swap current pane with the next one
+bind < swap-pane -U       # swap current pane with the previous one
+
+# Select windows
+bind -r ] next-window
+bind -r [ previous-window
+
+# Kill session/pane/session
+bind Q kill-pane
+bind q kill-window
+bind C-q kill-session
