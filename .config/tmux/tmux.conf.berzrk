@@ -1,3 +1,7 @@
+# My own TMUX config
+
+
+
 # Fix nvim colors when in Tmux
 set-option -g default-terminal "screen-254color"
 set-option -a terminal-features 'alacritty:RGB'
