@@ -16,6 +16,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     # MacOS specific settigns
     export PATH=/opt/homebrew/opt/curl/bin/:$PATH
     source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 elif [[ "$(uname)" == "Linux" ]]; then
     # Linux specific settings
     source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh

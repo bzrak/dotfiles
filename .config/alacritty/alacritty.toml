@@ -17,14 +17,14 @@ history = 100000  # Max value
 
 
 [font]
-size = 15.0       # Linux
-# size = 20.0     # MacOs
+# size = 15.0       # Linux
+size = 20.0     # MacOs
 
 # Extra space between character; x for letter spacing and y for line spacing
 offset = {x = 0, y = 0}     # default values
 
-normal = { family = "FiraMonoNerdFont", style = "Regular"}              # Linux
-# normal = { family = "FiraCode Nerd Font Mono", style = "Regular"}     # MacOS
+# normal = { family = "FiraMonoNerdFont", style = "Regular"}              # Linux
+normal = { family = "FiraCode Nerd Font Mono", style = "Regular"}     # MacOS
 
 # Other fonts
 # normal = { family = "SpaceMono Nerd Font", style = "Regular"}
