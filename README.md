@@ -14,14 +14,19 @@ These configurations files are primarily for MacOS, but may work on Linux (not g
 - [X] zathura (Linux)
 
 ## TODO
-
-- Ensure compatibility with Linux
-    - Alacritty have some different settings depending on OS.
 - Create install.sh
 
-## Important
-- Alacritty specific OS options
+
+## Installation
 ```shell
+# Symlink zsh configurations
+ln dotfiles/.zshrc ~/.zshrc
+ln dotfiles/.oh-my.zsh/custom/aliases.zsh ~/.oh-my.zsh/custom/aliases.zsh
+# Stow: Inside the repo dotfiles/
+stow --target=$HOME/.config .config
+# From inside ~/.config/ remove any unneeded folder (e.g. yabai/ when in Linux)
+
+# Alacritty OS specific settings
 # Linux
 ln -sf ~/.config/alacritty/linux.toml ~/.config/alacritty/specific.toml
 # Mac
