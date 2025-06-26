@@ -9,6 +9,7 @@ alias rclonecp='rclone copy --progress --disable-http2'
 
 
 # Shortcuts
+alias config='cd ~/.config/'
 alias config-alacritty='nvim ~/.config/alacritty'
 alias config-zsh-aliases='nvim ~/.oh-my-zsh/custom/aliases.zsh'
 alias config-zsh='nvim ~/.zshrc'
