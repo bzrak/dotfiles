@@ -22,10 +22,9 @@ These configurations files are primarily for MacOS, but may work on Linux (not g
 ## Important
 - Alacritty specific OS options
 ```shell
-# For Linux
+# Linux
 ln -sf ~/.config/alacritty/linux.toml ~/.config/alacritty/specific.toml
-# For Mac
+# Mac
 ln -sf ~/.config/alacritty/mac.toml ~/.config/alacritty/specific.toml
-```
 ```
 ```
