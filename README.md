@@ -27,4 +27,3 @@ ln -sf ~/.config/alacritty/linux.toml ~/.config/alacritty/specific.toml
 # Mac
 ln -sf ~/.config/alacritty/mac.toml ~/.config/alacritty/specific.toml
 ```
-```
