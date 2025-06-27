@@ -4,6 +4,7 @@
 
 -- Remove LazyVim defaut option of identifying the root directory.
 vim.g.root_spec = { "cwd" }
+vim.g.lazyvim_prettier_needs_config = false
 
 local opt = vim.opt
 -- Options
