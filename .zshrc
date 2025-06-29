@@ -4,13 +4,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # Exports
 export EDITOR="nvim"
 
-# Specifics
+# NNN
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_PLUG='p:preview-tui;'
 export NNN_ICONLOOKUP=1
 export NNN_TERMINAL='alacritty --title preview-tui'
 export NNN_PREVIEWIMGPROG='catimg'
-
 
 if [[ "$(uname)" == "Darwin" ]]; then
     # MacOS specific settigns

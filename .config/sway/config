@@ -1,5 +1,7 @@
 # Read `man 5 sway` for a complete reference.
 
+
+
 ### Variables
 # Alt key
 set $mod Mod1
@@ -67,6 +69,11 @@ bindsym $mod+space exec $menu
 
 
 
+## Prevent focus for NNN preview
+no_focus [title="preview-tui"]
+
+
+
 ### Idle configuration
 #
 # Example configuration:
@@ -119,7 +126,7 @@ bindsym $mod+space exec $menu
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -250,19 +257,19 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+# bar {
+#     position top
+#
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+#
+#     colors {
+#         statusline #ffffff
+#         background #323232
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
 
 #
 #
@@ -279,6 +286,16 @@ input "type:keyboard" {
 	xkb_layout us
 	xkb_variant intl
 }
+
+
+# Flameshot
+# According to wiki: `ensure that systemd/dbus is aware of these environment variables;`
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
+
+# Waybar
+exec waybar
 
 
 include /etc/sway/config.d/*

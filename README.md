@@ -1,26 +1,27 @@
-
 # dotfiles
 
 These configurations files are primarily for MacOS, but may work on Linux (not guaranteed).
 
-- [X] Nvim (LazyVim)
-- [X] Tmux
-- [X] Alacritty
-- [X] Zsh
-- [X] starship
-- [X] yabai (Mac)
-- [X] skhd (Mac)
-- [X] sway (Linux)
-- [X] zathura (Linux)
+- [x] Nvim (LazyVim)
+- [x] Tmux
+- [x] Alacritty
+- [x] Zsh
+- [x] starship
+- [x] yabai (Mac)
+- [x] skhd (Mac)
+- [x] sway (Linux)
+- [x] zathura (Linux)
 
 ## TODO
+
 - Create install.sh
 
-
 ## Installation
+
 ```shell
 # Symlink zsh configurations
 ln dotfiles/.zshrc ~/.zshrc
+ln .zlogin ~/.zlogin
 ln dotfiles/.oh-my.zsh/custom/aliases.zsh ~/.oh-my.zsh/custom/aliases.zsh
 # Stow: Inside the repo dotfiles/
 stow --target=$HOME/.config .config
