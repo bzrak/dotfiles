@@ -14,7 +14,8 @@ These configurations files are primarily for MacOS, but may work on Linux (not g
 
 ## TODO
 
-- Create install.sh
+- install.sh
+    - [X] nvim
 
 ## Installation
 
