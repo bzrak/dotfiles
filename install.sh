@@ -30,8 +30,22 @@ while true; do
     esac
 done
 
-echo -e "${GREEN}Installing nvim${NC}"
-echo Creating ${CONFIG_DIR}/nvim
-mkdir -p "${CONFIG_DIR}/nvim"
-echo Stow ${CONFIG_DIR}/nvim
-stow --target=${CONFIG_DIR}/nvim
+# Nvim
+while true; do
+    echo -e "Install ${GREEN}nvim${NC}?"
+    read -p "(y/n) " yn
+    case $yn in
+    [Yy]*)
+        echo Creating ${CONFIG_DIR}/nvim
+        mkdir -p "${CONFIG_DIR}/nvim"
+        echo Stow ${CONFIG_DIR}/nvim
+        stow --target=${CONFIG_DIR}/nvim
+        break
+        ;;
+    [Nn]*)
+        echo "[!] Not implemented :("
+        break
+        ;;
+    *) echo "Please answer yes or no." ;;
+    esac
+done
