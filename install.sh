@@ -43,7 +43,25 @@ while true; do
         break
         ;;
     [Nn]*)
-        echo "[!] Not implemented :("
+        break
+        ;;
+    *) echo "Please answer yes or no." ;;
+    esac
+done
+
+# Tmux
+while true; do
+    echo -e "Install ${GREEN}tmux${NC}?"
+    read -p "(y/n) " yn
+    case $yn in
+    [Yy]*)
+        echo Creating ${CONFIG_DIR}/tmux
+        mkdir -p "${CONFIG_DIR}/tmux"
+        echo Stow ${CONFIG_DIR}/tmux
+        stow --target=${CONFIG_DIR}/tmux tmux
+        break
+        ;;
+    [Nn]*)
         break
         ;;
     *) echo "Please answer yes or no." ;;
