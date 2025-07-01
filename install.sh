@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Variables
-DOT_DIR="$HOME/Git/dotfiles"
+DOT_DIR="$HOME/Dev/dotfiles"
 CONFIG_DIR="$HOME/.config"
 
 ## Color
@@ -39,7 +39,7 @@ while true; do
         echo Creating ${CONFIG_DIR}/nvim
         mkdir -p "${CONFIG_DIR}/nvim"
         echo Stow ${CONFIG_DIR}/nvim
-        stow --target=${CONFIG_DIR}/nvim
+        stow --target=${CONFIG_DIR}/nvim nvim
         break
         ;;
     [Nn]*)
