@@ -19,14 +19,14 @@ while true; do
     echo -e "Is this the correct path for the git/dotfiles? ${RED}${DOT_DIR}${NC}"
     read -p "(y/n) " yn
     case $yn in
-    [Yy]*)
-        break
-        ;;
-    [Nn]*)
-        echo "[!] Not implemented :("
-        exit
-        ;;
-    *) echo "Please answer yes or no." ;;
+        [Yy]*)
+            break
+            ;;
+        [Nn]*)
+            echo "[!] Not implemented :("
+            exit
+            ;;
+        *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -35,17 +35,17 @@ while true; do
     echo -e "Install ${GREEN}nvim${NC}?"
     read -p "(y/n) " yn
     case $yn in
-    [Yy]*)
-        echo Creating ${CONFIG_DIR}/nvim
-        mkdir -p "${CONFIG_DIR}/nvim"
-        echo Stow ${CONFIG_DIR}/nvim
-        stow --target=${CONFIG_DIR}/nvim nvim
-        break
-        ;;
-    [Nn]*)
-        break
-        ;;
-    *) echo "Please answer yes or no." ;;
+        [Yy]*)
+            echo Creating ${CONFIG_DIR}/nvim
+            mkdir -p "${CONFIG_DIR}/nvim"
+            echo Stow ${CONFIG_DIR}/nvim
+            stow --target=${CONFIG_DIR}/nvim nvim
+            break
+            ;;
+        [Nn]*)
+            break
+            ;;
+        *) echo "Please answer yes or no." ;;
     esac
 done
 
@@ -54,16 +54,16 @@ while true; do
     echo -e "Install ${GREEN}tmux${NC}?"
     read -p "(y/n) " yn
     case $yn in
-    [Yy]*)
-        echo Creating ${CONFIG_DIR}/tmux
-        mkdir -p "${CONFIG_DIR}/tmux"
-        echo Stow ${CONFIG_DIR}/tmux
-        stow --target=${CONFIG_DIR}/tmux tmux
-        break
-        ;;
-    [Nn]*)
-        break
-        ;;
-    *) echo "Please answer yes or no." ;;
+        [Yy]*)
+            echo Creating ${CONFIG_DIR}/tmux
+            mkdir -p "${CONFIG_DIR}/tmux"
+            echo Stow ${CONFIG_DIR}/tmux
+            stow --target=${CONFIG_DIR}/tmux tmux
+            break
+            ;;
+        [Nn]*)
+            break
+            ;;
+        *) echo "Please answer yes or no." ;;
     esac
 done
