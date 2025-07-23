@@ -1,0 +1,50 @@
+- name: General 󰪵
+  keybinds:
+    - name: Previous Selection/History (Insert/Normal)
+      key: Ctrl + P
+    - name: Next Selection/History (Insert/Normal)
+      key: Ctrl + N
+    - name: Accept Suggestion
+      key: Ctrl + Y
+    - name: Goto Beginning of the Line (Insert/Normal)
+      key: Ctrl + A / 0
+    - name: Goto End of the Line (Insert/Normal)
+      key: Ctrl + E / $
+    - name: Cancel Command (Insert/Normal)
+      key: Ctrl + C
+
+- name: Misc 
+  keybinds:
+    - name: Show the command manpage
+      key: Alt + H
+
+- name: Fzf 
+  keybinds:
+    - name: Exit/Cancel fzf
+      key: Ctrl + C / Esc
+    - name: Files and Folders
+      key: Ctrl + Alt + F
+    - name: Search Processes
+      key: Ctrl + Alt + P
+    - name: Search Variables
+      key: Ctrl + Alt + V
+    - name: Search Git Log
+      key: Ctrl + Alt + L
+    - name: Search Git Status
+      key: Ctrl + Alt + S
+    - name: Search Command History
+      key: Ctrl + Alt + H
+    - name: Tab Completion
+      key: Tab
+
+- name: Sudope
+  keybinds:
+    - name: Toggle Sudo
+      key: Alt + Esc
+
+- name: Puffer-fish 
+  keybinds:
+    - name: Repeat the command
+      key: \!!
+    - name: Repeat the Last Argument
+      key: Alt + . / !$

@@ -1,0 +1,52 @@
+- name: General 󰪵
+  keybinds:
+    - name: Prefix
+      key: Ctrl + A
+    - name: Detach
+      key: Ctrl + D
+    - name: Reload Config
+      key: Prefix + Ctrl + R
+    - name: Rename Session
+      key: Prefix + Shift + R
+
+- name: Misc 
+  keybinds:
+    - name: Enter Vi copy mode
+      key: Prefix + V
+    - name: Open URL
+      key: Prefix + U
+
+- name: Panes 
+  keybinds:
+    - name: Create Vertical Pane
+      key: Prefix + \
+    - name: Create Horizontal Pane
+      key: Prefix + -
+    - name: Delete Pane
+      key: Prefix + Shift + Q
+    - name: Focus Pane
+      key: Prefix + (H/J/K/L)
+    - name: Swap Pane
+      key: Prefix + (>/<)
+
+- name: Windows 
+  keybinds:
+    - name: Create Window
+      key: Prefix + C
+    - name: Focus Window
+      key: Prefix + (1/2/3/...)
+    - name: Focus Prev/Next Window
+      key: Prefix +  ] / [
+    - name: Delete Window
+      key: Prefix + Q
+    - name: Rename Window
+      key: Prefix + R
+
+- name: Fzf 
+  keybinds:
+    - name: New Session
+      key: Prefix + Shift + S
+    - name: Switch Session
+      key: Prefix + S
+    - name: Find Window
+      key: Prefix + W

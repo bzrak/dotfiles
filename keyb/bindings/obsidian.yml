@@ -1,0 +1,50 @@
+- name: General 󰪵
+  keybinds:
+    - name: New Note
+      key: Ctrl + N
+    - name: Open quick switcher
+      key: Ctrl + T
+    - name: Toggle Edit/Preview Mode
+      key: F1
+    - name: Toggle Live Preview/Source Mode
+      key: F2
+    - name: Open Command Palette
+      key: Ctrl + Shift + P
+
+- name: Markdown Formatting 
+  keybinds:
+    - name:  Headings 1-4
+      key: Ctrl + 1-4
+    - name:  Toggle Bold
+      key: Ctrl + B
+    - name:  Toggle Italic
+      key: Ctrl + I
+    - name:  Inline Code
+      key: Ctrl + G
+    - name: 󰅨 Block Code
+      key: Ctrl + Shift + G
+
+- name: Links 
+  keybinds:
+    - name: Insert Wikilinks
+      key: Ctrl + [
+    - name: Follow Link Under Cursor
+      key: Ctrl + ]
+
+- name: Interface 
+  keybinds:
+    - name: Toggle Right Sidebar
+      key: F3
+    - name: Toggle Left Sidebar
+      key: F4
+    - name: Toggle Developer Tools
+      key: Ctrl + Shift + I
+
+- name: Windows/Panes 󱂬
+  keybinds:
+    - name: Focus Window/Pane
+      key: Ctrl + H/J/K/L
+    - name: Split right
+      key: Ctrl + \
+    - name: Split below
+      key: Ctrl + -

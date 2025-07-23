@@ -1,5 +1,0 @@
-# MacOS Specific
-
-[font]
-size = 20.0     # MacOs
-normal = { family = "FiraCode Nerd Font Mono", style = "Regular"}     # MacOS

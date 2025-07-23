@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+grimblast copy area || exit
+DIR=$HOME/Pictures/Screenshots/$(date +%Y-%m)
+NAME=$(date +"%Y-%m-%d_%H-%M-%S")
+mkdir -p "$DIR"
+wl-paste --type image/png >"$DIR/screenshot_$NAME.png"
+notify-send "Screenshot saved to $DIR/$NAME.png"
