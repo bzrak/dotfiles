@@ -1,0 +1,7 @@
+[keyboard]
+# bindings = [{ <key>, <mods>, <mode>, <command> | <chars> | <action> },]
+bindings = [
+{key = "=", mods = "Command", action = "IncreaseFontSize"},
+{key = "_", mods = "Command | Shift", action = "ResetFontSize"},
+{key = "-", mods = "Command", action = "DecreaseFontSize"},
+]
