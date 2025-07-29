@@ -1,0 +1,103 @@
+- name: General 󰪵
+  keybinds:
+    - name: Exit/Quit
+      key: Q
+    - name: CD on Exit/Quit
+      key: "!"
+    - name: Cancel
+      key: Ctrl + C
+    - name: Open in Nemo
+      key: E
+    - name: Check tasks
+      key: W
+    - name: Create
+      key: E
+    - name: Moving
+      key: H/J/K/L
+    - name: Open selected file
+      key: Enter / O
+
+- name: Tabs 󰭋
+  keybinds:
+    - name: Create a Tab
+      key: T
+    - name: Delete Tab
+      key: Ctrl + C
+    - name: Focus Tab
+      key: 1/2/3/..
+    - name: Next Tab
+      key: "["
+    - name: Prev Tab
+      key: "]"
+
+- name: Copy 󰭋
+  keybinds:
+    - name: Open Copy Menu
+      key: C
+    - name: Copy Filename
+      key: C + F
+    - name: Copy File Path
+      key: C + C
+    - name: Copy Filename w/o Extension
+      key: C + N
+    - name: Copy Directory Path
+      key: C + D
+    - name: Archive selected files
+      key: C + A
+
+- name: Files/Dirs Manipulation 󱧶
+  keybinds:
+    - name: Create
+      key: A
+    - name: Delete
+      key: D
+    - name: Rename
+      key: R
+    - name: Yank/Copy
+      key: Y
+
+- name: Metadata 󱧶
+  keybinds:
+    - name: Open Metadata Menu
+      key: M
+    - name: Show sizes
+      key: M + S
+    - name: Show permissions
+      key: M + P
+
+- name: Find and Filter 󰈞
+  keybinds:
+    - name: Find Menu
+      key: F
+    - name: Filter Files
+      key: F + F
+    - name: Find Files by content (fuzzy finder)
+      key: F + G
+    - name: Fuzzy Find Files/Folder
+      key: Z
+
+- name: Goto 󰉙
+  keybinds:
+    - name: Goto Menu
+      key: G
+    - name: Go to Specific Folder
+      key: G + Space
+    - name: Go to ~/.config Folder
+      key: G + C
+    - name: Go to ~/Downloads
+      key: G + D
+    - name: Go to Home
+      key: G + H
+    - name: Go to Repo Root
+      key: G + R
+    - name: Go to Top
+      key: G + G
+    - name: Go to Hovered Symlink
+      key: G + F
+
+- name: Sort 
+  keybinds:
+    - name: Sort Menu
+      key: ","
+    - name: Sort by Size
+      key: ", + S"

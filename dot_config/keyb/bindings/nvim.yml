@@ -1,0 +1,48 @@
+- name: Windows/Panes 󱂬
+  keybinds:
+    - name: Prefix
+      key: Ctrl + W / Space + W
+    - name: Focus Window/Pane
+      key: Ctrl + H/J/K/L
+    - name: Split Horizontal (Below)
+      key: Space + - / Prefix + S
+    - name: Split Vertical (Right)
+      key: Space + / / Prefix + V
+    - name: Quit Window
+      key: Prefix + Q
+    - name: Switch Window
+      key: Prefix + W
+
+- name: Scrolling 
+  keybinds:
+    - name: Move Screen Down (One Line) (without moving cursor)
+      key: Ctrl - E
+    - name: Move Screen Up (One Line) (without moving cursor)
+      key: Ctrl - Y
+    - name: Move Screen/Cursor Up (Half-Page)
+      key: Ctrl - U
+    - name: Move Screen/Cursor Down (Half-Page)
+      key: Ctrl - D
+    - name: Center cursor on screen
+      key: ZZ
+
+- name: yazi 
+  keybinds:
+    - name: Open yazi (current file)
+      key: Space + E
+    - name: Open yazi (cwd)
+      key: Space + Shift + E
+    - name: Resume last yazi session
+      key: Alt + E
+
+- name: Telescope
+  keybinds:
+    - name: Scroll in Preview
+      key: Ctrl + F/D/U/K
+
+- name: Obsidian
+  keybinds:
+    - name: Follow link
+      key: gf
+    - name: Add tag
+      key: Ctrl + X

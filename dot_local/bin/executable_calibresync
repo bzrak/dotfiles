@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+#
+# Python script to sync a calibre library
+
+import argparse
+import subprocess
+from sys import exit, argv
+
+
+help_msg = """
+USAGE
+    calibresync [-s]erver [-l]ocal
+
+DESCRIPTION
+    Sync calibre library
+
+    -s, --server
+            Update the server with the local modifications. Changes server.
+
+    -l, --local
+            Update the local library. Changes local.
+"""
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
+        "-s", "--server", action="store_true", help="Updates the server library"
+    )
+    group.add_argument(
+        "-l", "--local", action="store_true", help="Updates the local library"
+    )
+
+    if len(argv) == 1:
+        parser.print_help()
+        exit(1)
+
+    args = parser.parse_args()
+
+    cmd = ["rclone", "sync", "--progress"]
+    local = "/home/berzrk/Documents/Library/"
+    server = "pixeldrain:Library/"
+
+    if args.local:
+        print("Updating Local Library")
+        cmd.extend([server, local])
+        subprocess.run(cmd, check=True)
+    if args.server:
+        print("Updating Server Library")
+        cmd.extend([local, server])
+        subprocess.run(cmd, check=True)
+
+
+if __name__ == "__main__":
+    main()

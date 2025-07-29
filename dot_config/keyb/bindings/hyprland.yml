@@ -1,0 +1,91 @@
+- name: Window Management 
+  keybinds:
+    - name: Move Window
+      key: Win + Mouse Left Button
+    - name: Resize Window
+      key: Win + Mouse Right Button
+    - name: Kill Active Window
+      key: Win + Q
+    - name: Focus Windows
+      key: Win + H/J/K/L
+    - name: Moving Windows
+      key: Win + Shift + H/J/K/L
+    - name: Toggle Floating Window
+      key: Win + V
+    - name: Toggle Fullscreen Window
+      key: Win + F
+
+- name: Workspace Management 󱁐
+  keybinds:
+    - name: Moving to a specific Workspace
+      key: Win + 1-9,0,F1-F3
+    - name: Moving Windows to other specific Workspace (Silent)
+      key: Win + 1-9,0,F1-F3
+    - name: Moving Windows to other specific Worskpace
+      key: Win + Ctrl + 1-9,0,F1-F3
+
+- name: Monitor Management 󰍹
+  keybinds:
+    - name: Focus primary monitory
+      key: Win + .
+    - name: Focus secondary monitory
+      key: Win + ,
+
+- name: Apps 󰙵
+  keybinds:
+    - name: Launch Browser
+      key: Win + B
+    - name: Launch Secondary Browser
+      key: Win + Shift + B
+    - name: Launch (terminal) Editor / IDE
+      key: Win + C
+    - name: Launch (terminal) File Manager
+      key: Win + E
+    - name: Launch (graphical) File Manager
+      key: Win + Shift + E
+    - name: Launch Terminal
+      key: Win + Enter
+    - name: Launch Obsidian
+      key: Win + O
+    - name: Launch System Monitor
+      key: Ctrl + Shift + Esc
+    - name: Open Launcher
+      key: Win + Space
+
+- name: Screenshot 󰹑
+  keybinds:
+    - name: Area and save to file
+      key: PrtSc
+    - name: Monitor and save to clipboard
+      key: Win + PrtSc
+    - name: Area and save to clipboard
+      key: Win + Shift + PrtSc
+
+- name: Pickers 󰒉
+  keybinds:
+    - name: Clipboard Picker
+      key: Win + Y
+    - name: Keybindings Picker
+      key: Win + /
+
+- name: Audio 
+  keybinds:
+    - name: Play-Pause Song
+      key: Win + F7
+    - name: Play Previous Song
+      key: Win + F5
+    - name: Play Next Song
+      key: Win + F6
+    - name: Toggle Mute
+      key: Win + F9
+    - name: Volume Down
+      key: Win + F10
+    - name: Volume Up
+      key: Win + F11
+
+- name: Misc 
+  keybinds:
+    - name: Restart Waybar
+      key: Win + Shift + Y
+    - name: Logout Menu
+      key: Win + Delete

@@ -1,0 +1,8 @@
+- name: View 󰕮
+  keybinds:
+    - name: Increase Font Size
+      key: Ctrl + "+"
+    - name: Decrease Font Size
+      key: Ctrl + "-"
+    - name: Reset Font Size
+      key: Ctrl + 0

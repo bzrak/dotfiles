@@ -1,0 +1,9 @@
+{
+  "custom/gpu-temperature": {
+    "exec-if": "which nvidia-smi",
+    "exec": "nvidia-smi --query-gpu=temperature.gpu --format=noheader",
+    "restart-interval": 5,
+    "tooltip": false,
+    "format": "󰢮 {}°C",
+  },
+}

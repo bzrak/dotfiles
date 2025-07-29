@@ -1,0 +1,50 @@
+- name: Movement
+  keybinds:
+    - name: Next Page
+      key: Space / Shift + J / Down Arrow
+    - name: Previous Page
+      key: Shift + Space / Shift + K / Up Arrow
+    - name: Snap Current Page
+      key: P
+    - name: Show Index
+      key: Tab
+
+- name: Points 
+  keybinds:
+    - name: Search for Text
+      key: "?"
+    - name: Search for the Next Result
+      key: n
+    - name: Search for the Previous Result
+      key: N
+    - name: Open Document
+      key: o
+
+- name: Bookmarks
+  keybinds:
+    - name: Set a quickmark to a letter or number X
+      key: m + X
+    - name: Goto quickmark X
+      key: "' + X"
+
+- name: Misc
+  keybinds:
+    - name: Invert Colors
+      key: Ctrl + R
+
+- name: View 󰕮
+  keybinds:
+    - name: Toggle Status Bar
+      key: a
+    - name: Best-fit
+      key: Ctrl + 0
+    - name: Zoom Out
+      key: Ctrl + "-"
+    - name: Zoom In
+      key: Ctrl + "+"
+    - name: Rotate Page by 90º
+      key: r
+    - name: Toggle Presentation Mode
+      key: F5
+    - name: Toggle Dual Pane
+      key: d

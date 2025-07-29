@@ -1,0 +1,8 @@
+{
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "  US",
+    "format-en-intl": "  US-INTL",
+    "on-click": "hyprctl switchxkblayout sonix-usb-device next",
+  },
+},

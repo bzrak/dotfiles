@@ -1,0 +1,64 @@
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+# One page per row by default
+set pages-per-row 1
+
+# Stop at page boundries
+set scroll-page-aware "true"
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+# Zoom settings
+set zoom-min 10
+set guioptions ""
+
+set render-loading "false"
+set font "JetBrainsMono NF"
+unmap a
+map a toggle_statusbar
+
+
+# Keybinds
+map <C-0> adjust_window "best-fit"
+map <C-=> zoom in
+map <C--> zoom out
+
+
+set selection-clipboard clipboard
+set window-title-page true
+
+# Colors
+set default-bg            "#000000"
+set default-fg            "#000000"
+
+set statusbar-bg          "#ffffff"
+set statusbar-fg          "#000000"
+
+set inputbar-bg           "#ffffff"
+set inputbar-fg           "#000000"
+
+set completion-bg         "#f0f0f0"
+set completion-fg         "#000000"
+set completion-highlight-bg "#d0d0d0"
+set completion-highlight-fg "#000000"
+
+set notification-bg       "rgba(38, 139, 210, 0.5)"
+set notification-fg       "#ffffff"
+set notification-error-bg "#aa0000"
+set notification-error-fg "#ffffff"
+set notification-warning-bg "#aa5500"
+set notification-warning-fg "#ffffff"
+
+set index-bg           "rgba(0, 0, 0, 1)"
+set index-fg           "rgba(255, 255, 255, 1)"
+set index-active-bg    "rgba(38, 139, 210, 0.7)"
+set index-active-fg    "rgba(255, 255, 255, 0.7)"
+
+set highlight-color        "rgba(38, 139, 210, 0.5)"
+set highlight-active-color "rgba(220, 50, 47, 0.7)"
+
+set recolor               "true"
+
+
