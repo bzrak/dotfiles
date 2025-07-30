@@ -1,5 +1,10 @@
 #!/usr/bin/bash
-grimblast copy area || exit
+# Select screen area and take a screenshot of it,
+# and will be saved as a PNG file.
+# The file will be located at
+#   $HOME/Pictures/Screenshots/YEAR-MONTH/screenshot_DATE.png
+
+grimblast --freeze copy area || exit
 DIR=$HOME/Pictures/Screenshots/$(date +%Y-%m)
 NAME=$(date +"%Y-%m-%d_%H-%M-%S")
 mkdir -p "$DIR"
