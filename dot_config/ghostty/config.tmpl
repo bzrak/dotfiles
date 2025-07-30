@@ -1,4 +1,15 @@
+{{- if eq .chezmoi.os "darwin" }}
+font-size = 24
+
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+{{- else if eq .chezmoi.os "linux" }}
 font-size = 16
+{{- else }}
+font-size = 24
+{{- end }}
+
 font-family = Maple Mono NF
 font-feature = +ss02
 font-feature = +ss03
@@ -12,10 +23,6 @@ cursor-invert-fg-bg = false
 
 background-opacity = .6
 background-blur = true
-
-macos-titlebar-style = hidden
-macos-option-as-alt = true
-mouse-hide-while-typing = true
 
 gtk-single-instance = true
 window-theme = system
