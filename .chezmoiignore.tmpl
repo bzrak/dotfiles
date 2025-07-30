@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "darwin" }}
+.config/yabai
+{{ end }}
+
+{{ if eq .chezmoi.os "linux" }}
+.config/hypr
+{{ end }}
