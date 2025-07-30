@@ -1,4 +1,4 @@
-function ldh --wraps='eza --long --header --icons -D --git' --description 'alias ldh=eza --long --header --icons -D --git'
+function ld --wraps='eza --long --header --icons -D --git' --description 'alias ld=eza --long --header --icons -D --git'
     if type -f eza &>/dev/null
         eza --long --header --icons -D --git --hyperlink $argv
     else
