@@ -3,22 +3,16 @@
 alt - return : open -n /Applications/Ghostty.app/
 
 # Open Editor
-alt - c : open -a Ghostty --args -e nvim
+# alt - c : open -a Ghostty --args -e nvim
 # Open Finder
 alt + shift - e : osascript -e 'tell application "Finder" to make new Finder window to (POSIX file "/Users/berzrk/")'
 # Open Browser
 alt - b : open -na Safari
 
-
-
-# Open Firefox
-#cmd + shift - return : /Applications/Firefox.app/Contents/MacOS/firefox
-
 # open mpv
 # cmd - m : open -na /Applications/mpv.app $(pbpaste)
 
 # Yabai
-#
 alt - q : yabai -m window --close
 
 # Window focus / Navigation
@@ -62,12 +56,11 @@ alt - right : yabai -m window --resize right:50:0; \
 alt + shift - r : yabai -m space --balance
 
 # Toggle Float
-alt + lctrl - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt - v: yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # Toggle Fullscreen
 alt - f : yabai -m window --toggle zoom-fullscreen
 shift + alt - f : yabai -m window --toggle native-fullscreen
-#alt - d : yabai -m window --toggle zoom-parent
 
 # toggle sticky(+float), picture-in-picture
 alt - p : yabai -m window --toggle sticky --toggle pip
