@@ -60,5 +60,6 @@ set highlight-color        "rgba(38, 139, 210, 0.5)"
 set highlight-active-color "rgba(220, 50, 47, 0.7)"
 
 set recolor               "true"
+set recolor-reverse-video "false"
 
 
