@@ -37,6 +37,8 @@ set -xg W3M_DIR $XDG_DATA_HOME/w3m
 set -xg DOTNET_CLI_HOME $XDG_DATA_HOME/dotnet
 set -xg PNPM_HOME $XDG_DATA_HOME/pnpm
 
+set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/docker.sock
+
 # Path
 fish_add_path $XDG_BIN_HOME
 fish_add_path $CARGO_HOME/bin
