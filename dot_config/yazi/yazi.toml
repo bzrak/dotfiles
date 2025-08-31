@@ -34,14 +34,12 @@ image = [
 ]
 
 video = [
-  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
   { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
 ]
 
 audio = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
   { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
-  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
 ]
 
 python = [
