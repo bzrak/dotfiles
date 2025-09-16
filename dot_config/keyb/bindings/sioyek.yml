@@ -1,0 +1,64 @@
+- name: Basics
+  keybinds:
+    - name: Open new document
+      key: O
+    - name: Open previously document
+      key: Shift + O
+    - name: Movement
+      key: J/K or Arrows (for left/right)
+    - name: Table of Contents
+      key: T
+
+- name: Movement 󰆾
+  keybinds:
+    - name: Next Page
+      key: Space
+    - name: Previous Page
+      key: Shift + Space
+    - name: Next Half Page
+      key: Ctrl + D / Shift + J / PgDn
+    - name: Previous Half Page
+      key: Ctrl + U / Shift + K / PgUp
+
+    - name: Snap Current Page
+      key: P
+    - name: Show Index
+      key: Tab
+
+- name: View 󰕮
+  keybinds:
+    - name: Zoom In
+      key: =
+    - name: Zoom Out
+      key: "-"
+    - name: Fit w/ margin
+      key: F8
+    - name: Fit w/o margin
+      key: F9
+
+- name: Marks (Persistent)
+  keybinds:
+    - name: Uppercase
+      key: Global
+    - name: Lowercase
+      key: Local
+    - name: Set a mark X
+      key: m + X
+    - name: Goto mark X
+      key: "` + X"
+
+- name: Smart Jumps
+  keybinds:
+    - name: Goto Picture Location
+      key: Middle Mouse
+    - name: Preview
+      key: Right Click
+
+- name: Misc
+  keybinds:
+    - name: Invert Colors
+      key: Ctrl + R
+    - name: History
+      key: Mouse Extra Buttons
+    - name: Open list of commands and keybinds
+      key: ":"
