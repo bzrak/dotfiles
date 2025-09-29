@@ -1,7 +1,7 @@
 # Waybar
 
 Primary Monitor:
-<img width="1917" height="46" alt="image" src="https://github.com/user-attachments/assets/205cdaef-5ab7-4da6-9f7d-940eda61da9f" />
+<img width="2558" height="54" alt="image" src="https://github.com/user-attachments/assets/6b60f124-858d-4121-901e-7c9c8d451df3" />
 Secondary:
 <img width="1917" height="46" alt="image" src="https://github.com/user-attachments/assets/b11170cc-65bc-45ca-886f-81d49978cb45" />
 
