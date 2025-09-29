@@ -1,11 +1,14 @@
+# Always ignore these files:
 .config/fish/fish_variables
 LICENSE
 
+# NOT a MacOS machine, ignore these files:
 {{ if ne .chezmoi.os "darwin" }}
 .config/yabai
 .config/skhd
 {{ end }}
 
+# NOT a Linux machine, ignore these files:
 {{ if ne .chezmoi.os "linux" }}
 .config/hypr
 .config/MangoHud
