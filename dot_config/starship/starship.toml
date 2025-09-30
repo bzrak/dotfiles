@@ -4,6 +4,7 @@
 add_newline = true
 
 format = """
+╭╴\
 $username\
 $hostname\
 $kubernetes\
@@ -18,6 +19,11 @@ $docker_context\
 ${custom.docker}\
 $all
 """
+
+[character]
+success_symbol = "╰─"
+error_symbol = "╰─"
+
 
 # Duration entry
 [cmd_duration]
@@ -46,12 +52,15 @@ format = '([$all_status$ahead_behind]($style))'
 
 [git_branch]
 symbol = " "
+format = "[$symbol$branch ]($style)"
 
 [hg_branch]
 symbol = " "
+format = "[$symbol$branch ]($style)"
 
 [fossil_branch]
 symbol = " "
+format = "[$symbol$branch ]($style)"
 
 # Gcloud entry
 [gcloud]
@@ -63,7 +72,8 @@ style = "bold blue"
 [directory]
 read_only = " 󰌾 "
 # home_symbol = " "
-truncation_length = 3
+truncation_length = 0
+format = '\[[$path]($style)[$read_only]($read_only_style)\] '
 
 # [directory.substitutions]
 # "Documents" = "󰈙 "
@@ -100,7 +110,7 @@ description = "Display symbol for remote Git server"
 command = "check-git-remote"
 when = 'git rev-parse --is-inside-work-tree 2> /dev/null'
 shell = ["bash", "--noprofile", "--norc"]
-format = "at $output  "
+format = "$output  "
 
 # Nerd fonts preset
 [aws]
@@ -112,6 +122,11 @@ symbol = " "
 
 [c]
 symbol = " "
+format = '[$symbol]($style)'
+
+[cpp]
+symbol = " "
+format = '[$symbol$version(-$name) )]($style)'
 
 [conda]
 symbol = " "
@@ -238,6 +253,7 @@ symbol = " "
 
 [python]
 symbol = " "
+format = '[${symbol}(\($pyenv_prefix$virtualenv\) )]($style)'
 
 [rlang]
 symbol = "󰟔 "
