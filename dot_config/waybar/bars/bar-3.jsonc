@@ -1,20 +1,9 @@
 {
   "include": [
     "~/.config/waybar/modules/hyprland-workspaces.jsonc",
-    "~/.config/waybar/modules/clock-short.jsonc",
-    "~/.config/waybar/modules/cpu.jsonc",
-    "~/.config/waybar/modules/custom-temperature-gpu.jsonc",
-    "~/.config/waybar/modules/network.jsonc",
-    "~/.config/waybar/modules/hyprland-language.jsonc",
+    "~/.config/waybar/modules/clock-3.jsonc"
   ],
-  "modules-left": [],
-  "modules-center": ["hyprland-workspaces"],
-  "modules-right": [
-    "hyprland/language",
-    "network",
-    "custom/gpu-temperature",
-    "cpu",
-    "pulseaudio",
-    "clock#short",
-  ],
+  "modules-left": ["clock#3"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["tray"],
 }
