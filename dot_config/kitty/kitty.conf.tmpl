@@ -3,7 +3,12 @@ font_family      family="Maple Mono NF"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
-font_size        15
+{{- if eq .chezmoi.os "darwin" }}
+font_size        20
+{{- else }}
+font-size =      15
+{{- end }}
+ 
 
 # Scrollback
 scrollback_lines 2000
@@ -17,9 +22,10 @@ background_opacity 1
 
 # Keybinds
 kitty_mod ctrl+shift
-
-
-
+{{if eq .chezmoi.os "darwin" }}
+# MacOS Specific
+shell /opt/homebrew/bin/fish --login --interactive
+{{- end }}
 
 # BEGIN_KITTY_THEME
 # Neofusion
