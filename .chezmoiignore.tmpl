@@ -3,24 +3,25 @@
 README.md
 LICENSE
 # Unused configs
-.config/yabai
-.config/skhd
 .config/ghostty
+.config/skhd
+.config/yabai
 
 # NOT a MacOS machine, ignore these files:
 {{ if ne .chezmoi.os "darwin" }}
-.config/yabai
 .config/skhd
+.config/yabai
 {{ end }}
 
 # NOT a Linux machine, ignore these files:
 {{ if ne .chezmoi.os "linux" }}
-.config/hypr
 .config/MangoHud
+.config/btop
+.config/hypr
+.config/keyb
 .config/qimgv
 .config/rofi
+.config/swaync
 .config/waybar
-.config/btop
 .config/zathura
-.config/keyb
 {{ end }}
