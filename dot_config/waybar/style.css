@@ -15,6 +15,16 @@ window#waybar {
     background: rgba(0, 0, 0, 1);
 }
 
+.modules-left {
+}
+
+/* Left Modules */
+#custom-separator {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Center Modules */
 #workspaces {
 }
 
@@ -30,6 +40,7 @@ window#waybar {
     background-color: #5c5b59;
 }
 
+/* Right Modules */
 #tray {
     margin: 0px 10px 0px 0px;
 }

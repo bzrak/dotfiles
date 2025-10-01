@@ -1,9 +1,11 @@
 {
   "include": [
     "~/.config/waybar/modules/hyprland-workspaces.jsonc",
-    "~/.config/waybar/modules/clock-3.jsonc"
+    "~/.config/waybar/modules/clock-3.jsonc",
+    "~/.config/waybar/modules/hyprland-language.jsonc",
+    "~/.config/waybar/modules/custom-separator.jsonc",
   ],
-  "modules-left": ["clock#3"],
+  "modules-left": ["clock#3", "custom/separator","hyprland/language"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray"],
 }
