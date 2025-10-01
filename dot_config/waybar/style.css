@@ -42,7 +42,6 @@ window#waybar {
 
 /* Right Modules */
 #tray {
-    margin: 0px 10px 0px 0px;
 }
 
 #tray menu {
@@ -51,4 +50,9 @@ window#waybar {
 
 #tray > .needs-attention {
     border: 2px solid #f04204;
+}
+
+#custom-notification {
+    margin-right: 10px;
+    margin-left: 10px;
 }
