@@ -54,6 +54,9 @@ fish_add_path /usr/lib/go/bin
 fish_add_path $XDG_DATA_HOME/npm/bin
 fish_add_path $XDG_DATA_HOME/nvim/mason/bin
 fish_add_path $XDG_DATA_HOME/go/bin
+{{- if eq .chezmoi.os "darwin" }}
+fish_add_path /opt/homebrew/bin/
+{{ end }}
 
 {{ if eq .chezmoi.os "darwin" }}
 set -xg SHELL /opt/homebrew/bin/fish
