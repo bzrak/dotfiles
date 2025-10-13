@@ -4,6 +4,8 @@ return {
     opts = {
       formatters_by_ft = {
         ["c"] = { "clang-format" },
+        ["html"] = { "prettier" },
+        ["css"] = { "prettier" },
       },
       formatters = {
         ["clang-format"] = {
