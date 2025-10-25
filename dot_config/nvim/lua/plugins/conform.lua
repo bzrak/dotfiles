@@ -6,6 +6,8 @@ return {
         ["c"] = { "clang-format" },
         ["html"] = { "prettier" },
         ["css"] = { "prettier" },
+        ["javascript"] = { "prettier" },
+        ["javascriptreact"] = { "prettier" },
       },
       formatters = {
         ["clang-format"] = {
