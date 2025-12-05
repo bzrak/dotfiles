@@ -10,5 +10,7 @@ if [ -z "$CONFIG" ]; then
   exit
 fi
 
-hyprctl dispatch exec "[float;size 45% 80%;center 1] ghostty -e $XDG_DATA_HOME/go/bin/keyb -k '$HOME/.config/keyb/bindings/$CONFIG.yml'"
+# hyprctl dispatch exec "[float;size 45% 80%;center 1] ghostty -e $XDG_DATA_HOME/go/bin/keyb -k '$HOME/.config/keyb/bindings/$CONFIG.yml'"
+alacritty -e "$XDG_DATA_HOME/go/bin/keyb" -k "$HOME/.config/keyb/bindings/$CONFIG.yml"
+
 # fi
