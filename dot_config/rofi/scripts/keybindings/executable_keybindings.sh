@@ -4,7 +4,12 @@
 #   notify-send "Program not found" "Make sure you have installed keyb"
 #   exit 1
 # else
-CONFIG=$(fd --base-directory "$HOME/.config/keyb/bindings" --type f . | sed 's/\.yml$//' | rofi -dmenu)
+dir="$HOME/.config/rofi/launchers/type-2"
+style='style-1'
+
+CONFIG=$(
+  fd --base-directory "$HOME/.config/keyb/bindings" --type f . | sed 's/\.yml$//' | rofi -dmenu -theme ${dir}/${style}.rasi
+)
 
 if [ -z "$CONFIG" ]; then
   exit
