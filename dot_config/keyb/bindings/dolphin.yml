@@ -1,0 +1,17 @@
+- name: Interface 󰪵
+  keybinds:
+    - name: Display Menubar
+      key: Ctrl + M
+    - name: Display Terminal window
+      key: F4
+    - name: Open in Terminal
+      key: Alt + Shift + F4
+    - name: Change View
+      key: Ctrl + 1/2/3
+    - name: Display Sidebar
+      key: F9
+
+- name: Misc 
+  keybinds:
+    - name: Show hidden files/folders
+      key: Ctrl + H
