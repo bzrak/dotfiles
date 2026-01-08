@@ -3,18 +3,33 @@
     - name: Prefix
       key: Ctrl + A
     - name: Detach
-      key: Ctrl + D
+      key: Prefix + Ctrl + D
     - name: Reload Config
-      key: Prefix + Ctrl + R
-    - name: Rename Session
-      key: Prefix + Shift + R
+      key: Prefix + Ctrl + O
 
-- name: Misc 
+- name: Session 󰪵
   keybinds:
-    - name: Enter Vi copy mode
-      key: Prefix + V
-    - name: Open URL
-      key: Prefix + U
+    - name: Quit Session
+      key: Prefix + Shift + Q
+    - name: Rename Session
+      key: Prefix + Ctrl + N
+    - name: Save Session
+      key: Prefix + Ctrl + S
+    - name: Restore Session
+      key: Prefix + Ctrl + R
+
+- name: Windows 
+  keybinds:
+    - name: Create Window
+      key: Prefix + C
+    - name: Quit Window
+      key: Prefix + Q
+    - name: Focus Window
+      key: Prefix + (1/2/3/...)
+    - name: Focus Prev/Next Window
+      key: Prefix + (]/[)
+    - name: Rename Window
+      key: Prefix + N
 
 - name: Panes 
   keybinds:
@@ -22,25 +37,11 @@
       key: Prefix + \
     - name: Create Horizontal Pane
       key: Prefix + -
-    - name: Delete Pane
-      key: Prefix + Shift + Q
-    - name: Focus Pane
-      key: Prefix + (H/J/K/L)
+    - name: Quit Pane
+      key: Prefix + Ctrl + Q
     - name: Swap Pane
       key: Prefix + (>/<)
 
-- name: Windows 
-  keybinds:
-    - name: Create Window
-      key: Prefix + C
-    - name: Focus Window
-      key: Prefix + (1/2/3/...)
-    - name: Focus Prev/Next Window
-      key: Prefix +  ] / [
-    - name: Delete Window
-      key: Prefix + Q
-    - name: Rename Window
-      key: Prefix + R
 
 - name: Fzf 
   keybinds:
@@ -50,3 +51,10 @@
       key: Prefix + S
     - name: Find Window
       key: Prefix + W
+
+- name: Misc 
+  keybinds:
+    - name: Enter Vi copy mode
+      key: Prefix + V
+    - name: Open URL
+      key: Prefix + U
